@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 07/12/2024</title>
+    <style>
+        body{
+                background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg");
+            }
+        #roundcorner{
+            border-radius: 90px;
+            padding: 20px;
+            background-color: white; 
+            }
+        #roundcorner1{
+            border-radius: 90px;
+            padding: 20px;
+            background-color: #FFBF00; 
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <h2 id="roundcorner1" style="font-family: fantasy;">
+            <a href="./" class="menu__icon" property="url">			
+            <div class="logo">
+            <div class="deg-hidden"></div>
+            <div class="donut deg45-1-gray"></div>
+          <div class="donut deg45-1"></div>
+          <div class="donut deg45-2-gray"></div>
+          <div class="donut deg45-2"></div>
+          <div class="donut deg45-3-gray"></div>
+          <div class="donut deg45-3"></div>
+          <div class="donut deg45-6-gray"></div>
+          <div class="donut deg45-6"></div>
+          <div class="donut deg45-5-gray"></div>
+          <div class="donut deg45-5"></div>
+          <div class="donut deg45-4-gray"></div>
+          <div class="donut deg45-4"></div> 
+        </div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23.993c6.627 0 12-5.371 12-11.997C24 5.371 18.627 0 12 0S0 5.37 0 11.996s5.373 11.997 12 11.997zm0-6.998a5 5 0 10-5-4.999 5 5 0 005 4.999z" fill="#FF5733"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M17 12.004h7c0-3.324-1.352-6.332-3.537-8.505l-4.946 4.945A4.983 4.983 0 0117 11.996v.008zM12.015 24h-.03.03z" fill="#C70039"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24 11.996c0 3.317-1.346 6.319-3.522 8.49l-4.95-4.948A4.982 4.982 0 0017 11.996m0 0h7z" fill="#900C3F"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M20.493 20.471A11.964 11.964 0 0112 23.992v-6.997a4.985 4.985 0 003.543-1.472l4.95 4.948z" fill="#581845"></path>
+        </svg>
+        </a> Assignment </h2>
+        <div id="roundcorner" style="font-family: fantasy;">
+            <ins><h3><img src="https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200102linuxcol/filosofia/filosofia/images/tuxcola.gif" style="width:42px;height:42px;">Task 1: Installation of Arduino IDE software on an Ubuntu VM </h3></ins><br>
+            <strong>Step 1: </strong></b>Install the Arduino IDE on the Ubuntu VM.<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, I used sudo apt install -y arduino to install Arduino which <br>
+            lastest version is 1.8.19 in Ubuntu VM The problem in this step is i cannot install Arduino at first, Terminal show me 
+            that "ubuntu is not in the sudoers file". Then I fixed it by use 
+            su root nano /etc/sudoers command and write user_name ALL=(ALL)  ALL
+            </p>
+            <strong>Step 2: </strong></b> Open the Arduino IDE and open the Blink sketch from the Arduino Examples.<br>
+            <br>w=true
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%202.1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, I used arduino command to open Arduino</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%202.2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; This is Arduino IDE 1.8.19 </p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%202.3.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; To open the Blink sketch, click on Examples >>> Basics >>> Blink</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%202.4.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; This is the Blink sketch on Arduino IDE</p><br>
+            <strong>Step 3: </strong></b> Select an Arduino board as the target, such as Arduino Uno or Nano<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%203.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, click on Tools >>> Board: >>> Arduino Uno</p><br>
+            <strong>Step 4: </strong></b>Build the Arduino sketch example.<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%204.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; click &#10004; button to verify sketch</p><br>
+            <strong>Step 5: </strong></b>Select the serial port corresponding to the attached Arduino board.<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step5.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; click Tools >>> Port but it won't have Arduino,then i have to set VM USB <br>
+            to connect them with Arduino</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/image.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; VM USB setting<br></p>
+            <strong>Step 6: </strong></b> Upload the compiled Arduino sketch to the Arduino board<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%206.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, click the &rarr; button to upload the sketch to arduino and Done!!!!   
+            </p>
+            <br>
+            <ins><h3><img src="https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200102linuxcol/filosofia/filosofia/images/tuxcola.gif" style="width:42px;height:42px;">Task 2: Installation of VS Code IDE software and extensions </h3></ins><br>
+            <strong>Step 1: </strong></b> Install VS Code IDE for Windows (Host OS).<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%201.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, installed VS Code IDE from <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><br>
+            <strong>Step 2: </strong>Install the Remote Development Extension Pack for VS Code IDE.</b> <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%202.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, installed Remote-SSH by press ctrl + shift + x <br>
+            to open extention and then search for Remote-SSH to install it</p><br>
+            <strong>Step 3: </strong> Connect VS Code to the remote machine (Ubuntu).</b> <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%203.1.png?raw=true"style="width: 500px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, press ctrl + shift + p to open the command palette <br>
+                and then type "Remote-SSH: Connect to Host..." and select it</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%203.2.png?raw=true"style="width: 500px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; Enter the SSH connection string for Ubuntu machine so for this step,<br>
+                I founded a problem about Ubuntu Desktop 's IP address,<br>
+                I can't connect at first time</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%203.3.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; VS Code will open a new window connected to Ubuntu machine</p><br>
+            <strong>Step 4: </strong>Install the PlatformIO extension for Remote Development.</b> <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%204.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, installed PlatformIO by press ctrl + shift + x to open extention <br>
+                and then search for PlatformIO to install it</p><br>
+            <strong>Step 5: </strong></b>Create a project using PlatformIO and the Arduino framework. <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%205.1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, Click on the PlatformIO icon in the sidebar to open PlatformIO Home<br>
+            So for this step, I have two problem about open PlatformIO Home <br>
+            because it doesn't load the page and doesn't read python interpreter at first time</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%205.2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; Create a new project in PlatformIO by Set your name for project,<br>
+                Select board from list, nsure "Arduino" is selected as the framework and then<br>
+                click "Finish" </p><br>
+            <strong>Step 6: </strong></b>Build the Arduino sketch and upload it to the target.<br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%206.1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; In this step, Open the src/main.cpp file in project file and then<br>
+            write the Arduino code in this file</p><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step6.2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <p style="font-family: 'Times New Roman', Times, serif;">&rarr; Click the &#10004; icon in the PlatformIO toolbar to build project and then<br>
+            click the &rarr; icon in the PlatformIO toolbar to upload the sketch <br>
+            to the Arduino board and Done!!!!!!</p><br>
+        </div>
+    </center>
+</body>
+</html>
