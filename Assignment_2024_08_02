@@ -32,20 +32,24 @@
             <a href="https://www.raspberrypi.com/software/  "> https://www.raspberrypi.com/software/ </a>
             <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step1.png?raw=true"style="width: 400px;; height: 250px;">
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step1.png?raw=true"style="width: 400px;; height: 250px;">
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step1.2.png?raw=true"style="width: 400px;; height: 250px;">
             <br>
             <br>
             <strong>Step 2: </strong></b> I insert SD card in my computer and open Raspberry Pi imager,first I erase all file in my SD card
             before write a Raspberry Pi file.
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%202.1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step2.png?raw=true"style="width: 400px;; height: 250px;"><br>
             <br>
             <strong>Step 3: </strong></b> After erase file, I select “Use Custom” and select the download <br>image file (.img.xz) and configure 
             the OS installation setting such as <br>hostname: rpi3b-demo, Enable SSH, Username: pipe and set 
             password<br>, Configure wireless LAN, Set locale setting and write this on SD card.
             <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%203.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step3.png?raw=true"style="width: 400px;; height: 250px;"><br>
             <br>
             <strong>Step 4: </strong></b>After write file on SD card, then I remove my SD card from my computer and insert it in 
             Raspberry Pi 4b and SSH to Raspberry Pi 4b and update software package, So after that, 
@@ -54,30 +58,36 @@
             open Raspberry Pi Configuration Tool and select Interfacing Option >> VNC >> Enable
             <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%204.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step4.png?raw=true"style="width: 400px;; height: 250px;"><br>
             <br>
             <strong>Step 5: </strong></b>After step 4, I install VNC Viewer from <a href="https://www.realvnc.com/en/connect/download/viewer/">https://www.realvnc.com/en/connect/download/viewer/</a>
             and launch it.
             <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step5.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step5.png?raw=true"style="width: 400px;; height: 250px;"><br>
             <br>
             <strong>Step 6: </strong></b>After I launch it, I type in the IP address of my Raspberry Pi as the VNC server address 
             (I get IP address from using ip a command in Raspberry Pi SSH) and VNC viewer will
             show the Raspberry Pi desktop.
             <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%201%20step%206.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step6.1.png?raw=true"style="width: 400px;; height: 250px;"><br>
             <br>
-            <ins><h3><img src="https://www.ibiblio.org/pub/linux/docs/LuCaS/Presentaciones/200102linuxcol/filosofia/filosofia/images/tuxcola.gif" style="width:42px;height:42px;">Task 3: Docker Engine Installation </h3></ins><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_02_step6.2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <ins><h3><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" style="width:42px;height:42px;">Task 3: Docker Engine Installation </h3></ins><br>
             <strong>Step 1: </strong></b> I install Docker software packages on Ubuntu OS by following instructions in <a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a> and I add the current user to the docker group
             <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%201.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_03_step1.1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_03_step1.2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_03_step1.3.png?raw=true"style="width: 400px;; height: 250px;"><br>
             <br>
             <strong>Step 2: </strong>I run the hello-world image in a Docker container without “sudo” command</b> <br>
             <br>
-            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task%202%20step%202.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Task_03_step2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
         </div>
     </center>
 </body>
