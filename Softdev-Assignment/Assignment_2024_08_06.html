@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 08/02/2024</title>
+    <style>
+        body{
+                background-color: #d521d8;
+            }
+        #roundcorner{
+            border-radius: 90px;
+            padding: 20px;
+            background-color: white; 
+            }
+        #roundcorner1{
+            border-radius: 90px;
+            padding: 20px;
+            background-color: white; 
+            }
+    </style>
+</head>
+<body>
+    <center>
+        <h2 id="roundcorner1" style="font-family: fantasy;">
+        <img src="https://avatars.githubusercontent.com/u/1544528?v=4" height="30" width="30">
+            Assignment : 08/06/2024 
+        </h2>
+        <div id="roundcorner" style="font-family: fantasy;">
+            <ins><h3><img src="https://avatars.githubusercontent.com/u/1544528?v=4" style="width:42px;height:42px;">Task 1: Write an Arduino sketch for the selected target board <br>such as ESP32 or ESP32C3 board
+                that communicates with a public <br>MQTT broker on port 1883. The sketch should be able to
+                publish <br>and subscribe to messages on a specific topic at regular intervals 
+                <br>(e.g., every 10 seconds).
+                </h3></ins><br>
+            <strong>Step 1: </strong></b> I use Arduino IDE on Window OS and I install esp32 core and PubSubClient on Arduino IDE .
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task1_1.1.png?raw=true"style="width: 400px;; height: 250px;">
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task1_1.2.png?raw=true"style="width: 400px;; height: 250px;">
+            <br>
+            <br>
+            <strong>Step 2: </strong></b>I write a sketch for WEMOS LOLIN32 Lite board and compile its to prepare to upload 
+            a sketch into board.        
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task1_2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+            <ins><h3><img src="https://avatars.githubusercontent.com/u/1544528?v=4" style="width:42px;height:42px;">Task 2: Install the Mosquitto client on Ubuntu to publish and subscribe to messages on the same
+                topic as used in Task 2.1.
+            </h3></ins><br>
+            <strong>Step 1: </strong></b> I install Mosquitto client on Ubuntu VM by using ssh powershell 
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task2_1.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+            <strong>Step 2: </strong>So I upload a sketch into board and I use Mosquitto client to subscribe the message from 
+            WEMOS LOLIN32 Lite board by port 1883, host name: test.mosquitto.org, 
+             topic: test/mosquito/status.
+            </b> <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task2_2.png?raw=true"style="width: 550px;"><br>
+            <br>
+            <ins><h3><img src="https://avatars.githubusercontent.com/u/1544528?v=4" style="width:42px;height:42px;">Task 3: Install and use the MQTT Explorer application <br>
+                on the host OS to publish and subscribe to messages <br>
+                on the same topic as used in Task 2.1.               
+            </h3></ins><br>
+            <strong>Step 1: </strong></b> I install MQTT Explorer application by <a href="https://github.com/thomasnordquist/MQTT-Explorer/releases">https://github.com/thomasnordquist/MQTT-Explorer/releases</a> 
+            and select .exe file.             
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task3_1.png?raw=true"style="width: 550px;"><br>
+            <br>
+            <strong>Step 2: </strong></b> When it finished, then open it and configure setting in MQTT connection.         
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task3_2.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+            <strong>Step 3: </strong></b> So when I configure it already, press Save and Connect, it will show your subscribe in your left.         
+            <br>
+            <br>
+            <img src="https://github.com/WasinPipe/WasinPipe.github.io/blob/main/image/Mqtt_Task3_3.png?raw=true"style="width: 400px;; height: 250px;"><br>
+            <br>
+        </div>
+    </center>
+</body>
+</html>
+
